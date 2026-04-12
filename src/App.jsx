@@ -1,9 +1,11 @@
 import "./App.css";
+import Navbar from "./Components/Navbar/Navbar";
 
 function App() {
   return (
     <>
-      <h2 className="text-3xl font-bold">Welcome to eSchool</h2>
+      <Navbar></Navbar>
+      
     </>
   );
 }
