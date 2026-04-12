@@ -3,6 +3,8 @@
 This project provides a structured JSON dataset for an **E-School Online Learning Platform**. It includes detailed information about available courses such as pricing, instructors, duration, and images — ideal for frontend development, API simulation, or UI design.
 
 ---
+## Live Demo : [Click Here](https://e-school-courese.netlify.app/)
+---
 
 ## 🚀 Features
 
