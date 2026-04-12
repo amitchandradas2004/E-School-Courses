@@ -3,7 +3,7 @@ import NavImage from "../../assets/Frame.png";
 import CenterUnderline from "../CenterUnderline";
 const Navbar = () => {
   return (
-    <nav className="shadow-sm fixed top-0 w-full">
+    <nav className="shadow-sm fixed top-0 z-10 w-full bg-green-100 px-2 md:px-0">
       <div className="flex justify-between   items-center py-1 container mx-auto">
         <div className="flex items-center gap-2">
           <img src={NavImage} className="w-10" />
@@ -11,18 +11,27 @@ const Navbar = () => {
         </div>
         <div className="flex justify-between items-center">
           <div className="poppins items-center font-medium justify-between flex hidden md:inline-flex  gap-5">
-            <p className="flex justify-center">
-              <CenterUnderline text="Books" />
-            </p>{" "}
-            <p className="flex justify-center">
-              <CenterUnderline text="Courses" />
-            </p>{" "}
-            <p className="flex justify-center">
-              <CenterUnderline text="Others" />
-            </p>{" "}
-            <p className="flex justify-center">
-              <CenterUnderline text="Blog" />
-            </p>{" "}
+            <a href="#">
+              <p className="flex justify-center">
+                <CenterUnderline text="Books" />
+              </p>{" "}
+            </a>
+            <a href="#">
+              <p className="flex justify-center">
+                <CenterUnderline text="Courses" />
+              </p>{" "}
+            </a>
+            <a href="#">
+              <p className="flex justify-center">
+                <CenterUnderline text="Others" />
+              </p>{" "}
+            </a>
+            <a href="#">
+              {" "}
+              <p className="flex justify-center">
+                <CenterUnderline text="Blog" />
+              </p>{" "}
+            </a>
             <button className="btn btn-success w-25 rounded-full text-white border-none">
               Sign in
             </button>
