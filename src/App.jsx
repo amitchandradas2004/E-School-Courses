@@ -4,6 +4,7 @@ import Banner from "./Components/Banner/Banner";
 import Cards from "./Components/Cards/Cards";
 import Courses from "./Components/Courses/Courses";
 import Navbar from "./Components/Navbar/Navbar";
+import Testimonial from "./Components/Testimonial/Testimonial";
 const fetchCourses = async () => {
   const res = await fetch("Courses.json");
   return res.json();
@@ -28,6 +29,7 @@ function App() {
       <Suspense  fallback={<Loader></Loader>}>
         <Courses coursesPromise={coursesPromise} />
       </Suspense>
+      <Testimonial></Testimonial>
     </>
   );
 }
