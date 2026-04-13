@@ -8,7 +8,16 @@ const fetchCourses = async () => {
   const res = await fetch("Courses.json");
   return res.json();
 };
-
+function Loader() {
+  return (
+    <div className="flex items-center justify-center  min-h-screen">
+      <div>
+        {" "}
+        <span className="loading  loading-bars loading-xl"></span>
+      </div>
+    </div>
+  );
+}
 function App() {
   const coursesPromise = fetchCourses();
   return (
@@ -16,8 +25,8 @@ function App() {
       <Navbar />
       <Banner />
       <Cards />
-      <Suspense fallback={'data is loading'}>
-        <Courses coursesPromise={coursesPromise}/>
+      <Suspense  fallback={<Loader></Loader>}>
+        <Courses coursesPromise={coursesPromise} />
       </Suspense>
     </>
   );
