@@ -2,7 +2,7 @@ import React from "react";
 import BannerImage from "../../assets/Frame(1).png";
 const Banner = () => {
   return (
-    <div className="pt-15 pb-8 bg-[#F0FFF0] min-h-[60vh]  px-2 md:px-0">
+    <div className="pt-15 pb-8 bg-[#F0FFF0] min-h-[35vh] items-center  px-2 md:px-0">
       <div className="flex flex-col md:flex-row justify-between items-center gap-5 container mx-auto">
         <div className="left w-full md:w-2/3 ">
           <p className="poppins text-[#FD511A] font-semibold">
